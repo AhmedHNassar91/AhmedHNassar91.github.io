@@ -1,0 +1,205 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #c03939;
+}
+
+/* Header */
+header {
+    background: #232F34;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    color: #FFC107;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('C:\Users\Ahmed Nassar\Desktop\couch2coder2\day_1\b2.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero button {
+    background-color: #FFC107;
+    color: #232F34;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #ff9800;
+}
+
+/* Services Section */
+.services {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.services h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #232F34;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.service-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.service-box img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.service-box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* About Section */
+.about {
+    background-color: #232F34;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.about-text, .about-image {
+    flex: 1;
+    margin: 10px;
+}
+
+.about-text {
+    padding: 40px;
+}
+
+.about-text h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+/* Footer */
+footer {
+    background-color: #232F34;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
